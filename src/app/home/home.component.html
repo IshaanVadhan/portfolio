@@ -1,0 +1,185 @@
+<header
+  id="header"
+  class="ease-300 w-full z-[999]"
+  [ngClass]="
+    activeTab !== 'home'
+      ? 'sticky h-20 top-0 left-0 right-0 bg-background-3 sm:h-16'
+      : 'h-full bg-background-1'
+  "
+>
+  <div
+    class="ease-300 flex flex-row items-center justify-center h-full w-full lg:flex-col-reverse"
+  >
+    <div
+      class="ease-300 p-8 flex lg:items-center"
+      [ngClass]="
+        activeTab !== 'home'
+          ? 'flex-row w-full justify-between items-center sm:pl-4'
+          : 'flex-col w-fit lg:justify-center items-start'
+      "
+    >
+      <h1
+        class="ease-300 text-text-1 my-[0.66rem] lg:my-0 font-bold font-poppins text-center cursor-pointer"
+        [ngClass]="
+          activeTab !== 'home'
+            ? 'text-4xl sm:text-2xl'
+            : 'text-5xl lg:text-4xl animate-enter-top'
+        "
+      >
+        <a (click)="setActiveTab('home')" routerLink="/">Ishaan Vadhan</a>
+      </h1>
+      <h2
+        class="ease-300 text-text-2 font-raleway text-2xl lg:text-xl lg:text-center my-2 font-bold animate-enter-top lg:animate-enter-bottom lg:leading-9 md:max-w-60"
+        [class.hidden]="activeTab !== 'home'"
+      >
+        I'm a passionate
+        <span
+          class="ease-300 border-b-2 border-primary-2 pb-1 font-bold text-text-1"
+          >developer</span
+        >
+        from India
+      </h2>
+
+      <nav
+        id="navbar"
+        class="ease-300 relative lg:fixed lg:top-0 lg:right-0 lg:bottom-0 lg:left-0 lg:overflow-hidden lg:mt-0"
+        [class.mt-6]="activeTab === 'home'"
+        [ngClass]="
+          mobileToggle
+            ? 'lg:block lg:animate-fade-in bg-backdrop z-99 mt-0'
+            : 'lg:hidden'
+        "
+      >
+        <ul
+          class="ease-300 flex text-lg items-center lg:justify-center lg:top-16 lg:right-5 lg:bottom-6 lg:left-5 lg:border lg:rounded lg:border-overwhite"
+          [class.animate-enter-bottom]="activeTab === 'home'"
+          [ngClass]="
+            mobileToggle
+              ? 'flex-col z-99 lg:absolute lg:flex lg:flex-col lg:animate-fade-in'
+              : 'lg:hidden lg:animate-fade-out'
+          "
+        >
+          <li
+            class="ease-300 relative lg:my-4 lg:mx-7 lg:animate-enter-left-fast"
+          >
+            <a
+              class="ease-300 text-text-2 flex items-center font-poppins nav-tab"
+              (click)="setActiveTab('home'); setMobileToggle(false)"
+              [class.nav-tab-active]="activeTab === 'home'"
+              routerLink="/"
+              >Home</a
+            >
+          </li>
+          <li
+            class="ease-300 relative lg:my-4 lg:mx-7 ml-8 lg:animate-enter-right-fast"
+          >
+            <a
+              class="ease-300 text-text-2 flex items-center font-poppins nav-tab"
+              (click)="setActiveTab('about'); setMobileToggle(false)"
+              [class.nav-tab-active]="activeTab === 'about'"
+              routerLink="/about"
+              >About</a
+            >
+          </li>
+          <li
+            class="ease-300 relative lg:my-4 lg:mx-7 ml-8 lg:animate-enter-left-fast"
+          >
+            <a
+              class="ease-300 text-text-2 flex items-center font-poppins nav-tab"
+              (click)="setActiveTab('resume'); setMobileToggle(false)"
+              [class.nav-tab-active]="activeTab === 'resume'"
+              routerLink="/resume"
+              >Resume</a
+            >
+          </li>
+          <li
+            class="ease-300 relative lg:my-4 lg:mx-7 ml-8 lg:animate-enter-right-fast"
+          >
+            <a
+              class="ease-300 text-text-2 flex items-center font-poppins nav-tab"
+              (click)="setActiveTab('projects'); setMobileToggle(false)"
+              [class.nav-tab-active]="activeTab === 'projects'"
+              routerLink="/projects"
+              >Projects</a
+            >
+          </li>
+          <li
+            class="ease-300 relative lg:my-4 lg:mx-7 ml-8 lg:animate-enter-left-fast"
+          >
+            <a
+              class="ease-300 text-text-2 flex items-center font-poppins nav-tab"
+              (click)="setActiveTab('contact'); setMobileToggle(false)"
+              [class.nav-tab-active]="activeTab === 'contact'"
+              routerLink="/contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="hidden lg:block">
+        <ng-icon
+          *ngIf="!mobileToggle"
+          name="bootstrapList"
+          (click)="setMobileToggle(!mobileToggle)"
+          class="ease-500 text-3xl cursor-pointer"
+          [ngClass]="
+            activeTab !== 'home'
+              ? 'top-5 right-5 sm:top-4 sm:right-4 -mr-2 sticky'
+              : 'top-6 right-6 fixed'
+          "
+        />
+        <ng-icon
+          *ngIf="mobileToggle"
+          name="bootstrapX"
+          (click)="setMobileToggle(!mobileToggle)"
+          class="ease-500 text-3xl cursor-pointer"
+          [ngClass]="
+            activeTab !== 'home'
+              ? 'top-4 right-4 -mr-2 sticky'
+              : 'top-6 right-6 fixed'
+          "
+        />
+      </div>
+
+      <div
+        class="ease-300 mt-8 flex lg:mt-6 animate-enter-bottom"
+        [class.hidden]="activeTab !== 'home'"
+      >
+        <a
+          href="https://www.linkedin.com/in/ishaanvadhan/"
+          target="_blank"
+          class="ease-500 text-2xl w-12 h-12 flex justify-center items-center bg-background-5 text-text-1 mr-3 rounded-full sm:text-xl sm:w-10 sm:h-10 social-link"
+          ><ng-icon name="bootstrapLinkedin" class="text-xl sm:text-base"
+        /></a>
+        <a
+          href="https://github.com/IshaanVadhan/"
+          target="_blank"
+          class="ease-500 text-2xl w-12 h-12 flex justify-center items-center bg-background-5 text-text-1 mr-3 rounded-full sm:text-xl sm:w-10 sm:h-10 social-link"
+          ><ng-icon name="bootstrapGithub" class="text-xl sm:text-base"
+        /></a>
+        <a
+          href="https://www.instagram.com/ishxxn_/"
+          target="_blank"
+          class="ease-500 text-2xl w-12 h-12 flex justify-center items-center bg-background-5 text-text-1 mr-3 rounded-full sm:text-xl sm:w-10 sm:h-10 social-link"
+          ><ng-icon name="bootstrapInstagram" class="text-xl sm:text-base"
+        /></a>
+        <a
+          href="https://www.facebook.com/people/Ishaan-Vadhan/pfbid0271xHSkeLtt1rxQtFgKKXnxbTzYFRBUxi5oNoteuyWHpro2QcFP1d4mz1f2EMNd8Bl/"
+          target="_blank"
+          class="ease-500 text-2xl w-12 h-12 flex justify-center items-center bg-background-5 text-text-1 rounded-full sm:text-xl sm:w-10 sm:h-10 social-link"
+          ><ng-icon name="bootstrapFacebook" class="text-xl sm:text-base"
+        /></a>
+      </div>
+    </div>
+    <div
+      class="ease-300 flex flex-col ml-12 lg:ml-0 animate-enter-right lg:animate-enter-top"
+      [class.hidden]="activeTab !== 'home'"
+    >
+      <img
+        class="ease-300 w-[17.5rem] lg:w-60 sm:w-52 rounded-full border-2 border-primary-2"
+        src="../../assets/profile.jpeg"
+        alt="Profile"
+      />
+    </div>
+  </div>
+</header>
