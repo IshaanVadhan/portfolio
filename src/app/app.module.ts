@@ -24,6 +24,7 @@ import { EmptyComponent } from './empty/empty.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { ContactComponent } from './contact/contact.component';
       bootstrapTelephoneOutboundFill,
       bootstrapChatRightDotsFill,
     }),
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
