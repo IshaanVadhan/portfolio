@@ -117,3 +117,8 @@ body {
 ::-webkit-scrollbar-thumb:active {
   background-color: #50cf7fbb;
 }
+
+.popup {
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75), 0 0 1rem rgba(0, 0, 0, 0.75);
+  z-index: 999;
+}

@@ -16,10 +16,31 @@ export class ContactComponent {
     message: '',
   };
   isSending: boolean = false;
+  message: string | null = null;
+  msgType: boolean = true;
+  showNotification: boolean = false;
+  private timeoutId: any;
 
   form: FormGroup = this.fb.group(this.formParams);
 
   constructor(private fb: FormBuilder) {}
+
+  showMessage(message: string, msgType: boolean = true) {
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId);
+    }
+    this.message = message;
+    this.msgType = msgType;
+    this.showNotification = true;
+    this.timeoutId = setTimeout(() => {
+      this.hideMessage();
+    }, 3000);
+  }
+
+  hideMessage() {
+    this.message = null;
+    this.showNotification = false;
+  }
 
   async sendEmail() {
     if (this.isSending) return;
@@ -38,9 +59,9 @@ export class ContactComponent {
       reply_to: from_email,
     });
     if (response.status === 200) {
-      alert(`Message has been sent to ${to_name}!`);
+      this.showMessage(`Message has been sent to ${to_name}!`, true);
     } else {
-      alert(`Couldn't send the message!`);
+      this.showMessage(`Couldn't send the message!`, false);
     }
     this.form.reset(this.formParams);
     this.isSending = false;

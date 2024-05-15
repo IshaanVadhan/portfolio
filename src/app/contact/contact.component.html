@@ -173,3 +173,10 @@
     </div>
   </div>
 </div>
+<div
+  *ngIf="showNotification"
+  class="fixed top-24 sm:top-20 left-1/2 transform -translate-x-1/2 bg-background-3 text-white px-4 py-3 border-l-4 rounded break-words popup min-w-80 max-w-80"
+  [ngClass]="msgType ? 'border-green-500' : 'border-red-500'"
+>
+  {{ message }}
+</div>
