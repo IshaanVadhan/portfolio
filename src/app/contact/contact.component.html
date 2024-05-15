@@ -173,9 +173,10 @@
         </div>
         <div class="flex justify-center mt-4 mb-2">
           <input
-            class="ease-300 border border-primary-2 text-primary-2 font-medium rounded px-3 py-2 cursor-pointer hover:bg-primary-2 hover:text-black lg:bg-primary-2 lg:text-black outline-none focus:bg-primary-2 focus:text-black"
+            class="ease-300 border border-primary-2 text-primary-2 disabled:border-[#ffffff55] disabled:text-[#ffffff55] font-medium rounded px-3 py-2 cursor-pointer [&:not(:disabled)]:hover:bg-primary-2 [&:not(:disabled)]:hover:text-black lg:bg-primary-2 lg:text-black lg:disabled:bg-[#ffffff22] lg:disabled:text-text-3 outline-none focus:bg-primary-2 focus:text-black lg:border-none"
             type="submit"
             value="Send Message"
+            [disabled]="isSending || form.invalid"
           />
         </div>
       </form>

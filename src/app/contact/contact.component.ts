@@ -15,12 +15,16 @@ export class ContactComponent {
     subject: '',
     message: '',
   };
+  isSending: boolean = false;
 
   form: FormGroup = this.fb.group(this.formParams);
 
   constructor(private fb: FormBuilder) {}
 
   async sendEmail() {
+    if (this.isSending) return;
+    this.isSending = true;
+
     const { from_name, to_name, from_email, subject, message } =
       this.form.value;
 
@@ -39,5 +43,6 @@ export class ContactComponent {
       alert(`Couldn't send the message!`);
     }
     this.form.reset(this.formParams);
+    this.isSending = false;
   }
 }
