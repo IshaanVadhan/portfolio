@@ -11,8 +11,8 @@
     </h2>
     <p class="section-subtitle">Get in Touch</p>
     <div class="grid grid-cols-2 lg:grid-cols-1 mt-6 gap-6">
-      <div class="py-3 px-4 bg-background-5 rounded-md flex items-center">
-        <div class="mt-1">
+      <div class="py-3 px-4 bg-background-5 rounded-md flex items-start">
+        <div class="mt-1.5">
           <ng-icon name="bootstrapGeoAltFill" class="text-primary-2 text-2xl" />
         </div>
         <div class="ml-5 flex flex-col">
@@ -28,8 +28,8 @@
           </a>
         </div>
       </div>
-      <div class="py-3 px-4 bg-background-5 rounded-md flex items-center">
-        <div class="mt-1">
+      <div class="py-3 px-4 bg-background-5 rounded-md flex items-start">
+        <div class="mt-2">
           <ng-icon name="bootstrapShareFill" class="text-primary-2 text-2xl" />
         </div>
         <div class="ml-5 flex flex-col">
@@ -64,8 +64,8 @@
           </div>
         </div>
       </div>
-      <div class="py-3 px-4 bg-background-5 rounded-md flex items-center">
-        <div class="mt-0.5">
+      <div class="py-3 px-4 bg-background-5 rounded-md flex items-start">
+        <div class="mt-1">
           <ng-icon
             name="bootstrapEnvelopeAtFill"
             class="text-primary-2 text-2xl"
@@ -84,8 +84,8 @@
           </a>
         </div>
       </div>
-      <div class="py-3 px-4 bg-background-5 rounded-md flex items-center">
-        <div class="mt-1.5">
+      <div class="py-3 px-4 bg-background-5 rounded-md flex items-start">
+        <div class="mt-2">
           <ng-icon
             name="bootstrapTelephoneOutboundFill"
             class="text-primary-2 text-2xl"
@@ -104,6 +104,72 @@
           </a>
         </div>
       </div>
+    </div>
+    <div
+      class="mt-6 py-3 px-4 bg-background-5 rounded-md flex flex-col justify-center"
+    >
+      <div class="flex justify-start items-start">
+        <div class="mt-1.5">
+          <ng-icon
+            name="bootstrapChatRightDotsFill"
+            class="text-primary-2 text-2xl"
+          />
+        </div>
+        <p class="ml-5 uppercase text-lg font-raleway font-bold text-text-2">
+          Contact me
+        </p>
+      </div>
+      <form class="mt-1 ml-11 mr-1">
+        <div class="grid grid-cols-2 lg:grid-cols-1 gap-5 w-full">
+          <div class="flex flex-col justify-start">
+            <input
+              class="bg-[#ffffff22] p-3 lg:p-2.5 rounded outline-none text-base"
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Name"
+            />
+          </div>
+          <div class="flex flex-col justify-start">
+            <input
+              class="bg-[#ffffff22] p-3 lg:p-2.5 rounded outline-none text-base"
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Email"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col justify-start mt-5">
+          <input
+            class="bg-[#ffffff22] p-3 lg:p-2.5 rounded outline-none text-base"
+            type="text"
+            id="subject"
+            name="subject"
+            required
+            placeholder="Subject"
+          />
+        </div>
+        <div class="flex flex-col justify-start mt-5">
+          <textarea
+            class="bg-[#ffffff22] p-3 lg:p-2.5 rounded outline-none text-base resize-none"
+            id="message"
+            name="message"
+            rows="6"
+            required
+            placeholder="Message"
+          ></textarea>
+        </div>
+        <div class="flex justify-center mt-4 mb-2">
+          <input
+            class="ease-300 border border-primary-2 text-primary-2 font-medium rounded px-3 py-2 cursor-pointer hover:bg-primary-2 hover:text-black lg:bg-primary-2 lg:text-black"
+            type="submit"
+            value="Send Message"
+          />
+        </div>
+      </form>
     </div>
   </div>
 </div>
