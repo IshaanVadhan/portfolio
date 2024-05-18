@@ -29,10 +29,7 @@ export class HomeComponent {
   }
 
   scrollToTop(): void {
-    // Get the native element of the component
     const element = this.elementRef.nativeElement;
-
-    // Scroll to the top of the component
     element.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 

@@ -1,0 +1,65 @@
+{
+  "educations": [
+    {
+      "degree": "Bachelor of Engineering (Computer)",
+      "org": "Progressive Education Society's Modern College of Engineering, Pune, Maharashtra",
+      "dates": "2021 - 2024",
+      "points": ["8.94 CGPA"]
+    },
+    {
+      "degree": "12th grade (H. S. C.)",
+      "org": "Mahaveer English Medium School and Junior College, Pune, Maharashtra",
+      "dates": "2018 - 2019",
+      "points": ["82.15 %"]
+    },
+    {
+      "degree": "10th grade (S. S. C.)",
+      "org": "Acharya Shri Vijay Vallabh School, Pune, Maharashtra",
+      "dates": "2016 - 2017",
+      "points": ["94.60 %"]
+    }
+  ],
+  "positions": [
+    {
+      "title": "Technical Event Lead",
+      "org": "CodeFiesta, Progressive Education Society's Modern College of Engineering, Pune, Maharashtra",
+      "dates": "March 2023 - April 2023",
+      "points": [
+        "Played a pivotal role as a part of the technical team responsible for developing and managing an innovative coding platform for the CodeFiesta technical festival",
+        "Coordinated and managed the entire event, overseeing logistics and participant registrations to ensure a seamless experience for all attendees"
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "title": "Fullstack Developer Intern",
+      "org": "Woochat.io, Pune, Maharashtra",
+      "dates": "August 2023 - October 2023",
+      "points": [
+        "Developed the WooChat product mobile application, creating a parallel version of the web application for mobile users, using React native (Expo)",
+        "Collaborated on the integration of GraphQL queries to enhance data retrieval and interaction",
+        "Developed and optimized the backend employing technologies like Nest.js and MongoDB"
+      ]
+    },
+    {
+      "title": "Fullstack Developer Intern",
+      "org": "Acecom Solutions, Pune, Maharashtra",
+      "dates": "October 2022 - April 2023",
+      "points": [
+        "Worked on three projects from scratch, utilizing technologies such as HTML, CSS, JavaScript, React.js, Python, FastAPI, PostgreSQL, SQLite, DigitalOcean and Linux",
+        "Developed and successfully deployed a comprehensive job portal web application",
+        "Designed and implemented a batch-wise manufacturing analysis tool with features to analyze and optimize cost efficiency based on reports generated on different levels",
+        "Implemented a procurement management tool integrated with features such as vendor management and inventory tracking"
+      ]
+    },
+    {
+      "title": "Android Developer Intern",
+      "org": "Deenanath Mangeshkar Hospital and Research Center, Pune, Maharashtra",
+      "dates": "January 2023 - April 2023",
+      "points": [
+        "Designed and developed an efficient application that integrates complex querying algorithms and data analytics to minimize prescription errors in neonatal care",
+        "Implemented technologies like React Native, Firebase and Expo for easier and efficient development"
+      ]
+    }
+  ]
+}

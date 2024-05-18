@@ -1,0 +1,64 @@
+[
+  {
+    "name": "Mobile Prepaid Recharge System",
+    "summary": "A fullstack web application built using Spring Boot and Angular",
+    "points": [
+      "Facilitated users to browse and purchase plans with dummy payment methods, while offering statistics on their current plan and past recharges via dashboard interfaces",
+      "Implemented authentication, mail service and scheduler tasks for seamless user experience and reliability",
+      "Utilized Lombok for code efficiency and reduced boilerplate code, Spring Data JPA with MySQL for ensuring efficient data access and management and Bootstrap for minimal responsive UI"
+    ],
+    "dates": "March 2024 - April 2024",
+    "skills": [4, 5, 6, 10, 13, 1, 16, 17, 19, 26],
+    "altImgId": 1
+  },
+  {
+    "name": "Whatsapp Clone",
+    "summary": "A fullstack replica of Whatsapp with its primary features",
+    "points": [
+      "Constructed using technologies like React.js, Next.js, Tailwind CSS, Node.js, and Express.js",
+      "Implemented real-time communication with Socket.io and integrated ZegoCloud, a platform with API services for enhanced video/voice call support",
+      "Utilized Prisma, PostgreSQL and Firebase for database management and secure Google authentication",
+      "Incorporated features like text, image, video, and audio messaging, coupled with real-time status updates for seamless communication"
+    ],
+    "dates": "July 2023 - August 2023",
+    "skills": [4, 5, 6, 11, 12, 8, 14, 20, 23, 26, 28, 30, 31],
+    "altImgId": 2
+  },
+  {
+    "name": "Netflix Clone",
+    "summary": "A replica of Netflix built using React.js and Firebase",
+    "points": [
+      "Replicated Netflix's home, sign-in and browse pages",
+      "Implemented the compound components pattern and external libraries like styled-components and Fuse.js",
+      "Used Firebase's database for data fetching and authentication for accessing the data",
+      "Set up custom hooks for persistent login and data retrieval"
+    ],
+    "dates": "July 2022 - August 2022",
+    "skills": [4, 5, 6, 12, 23],
+    "altImgId": 3
+  },
+  {
+    "name": "Face Recognition Attendance System",
+    "summary": "Attendance system using Python with its framework and libraries",
+    "points": [
+      "Developed a python application using the open source face recognition library",
+      "Integrated it to a web application using the Flask framework",
+      "Designed a user-friendly UI for the web app using HTML, CSS and JavaScript"
+    ],
+    "dates": "March 2022 - May 2022",
+    "skills": [4, 5, 6, 3, 29],
+    "altImgId": 4
+  },
+  {
+    "name": "Daily Weather API - Web App",
+    "summary": "Application based on OpenWeatherMap API",
+    "points": [
+      "Implemented a UI to fetch current weather data using the React.js framework",
+      "Employment of storage formats like JSON and XML for data retrieved using search queries",
+      "Acquired knowledge about the OpenWeatherMap API and data retrieving"
+    ],
+    "dates": "May 2022 - June 2022",
+    "skills": [4, 5, 6, 12],
+    "altImgId": 5
+  }
+]

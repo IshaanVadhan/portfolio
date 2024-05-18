@@ -10,7 +10,7 @@
       Contact
     </h2>
     <p class="section-subtitle">Get in Touch</p>
-    <div class="grid grid-cols-2 lg:grid-cols-1 mt-6 gap-6 tracking-wider">
+    <div class="grid grid-cols-2 lg:grid-cols-1 mt-4 gap-6 tracking-wider">
       <div class="py-3 px-4 bg-background-3 rounded-md flex items-start">
         <div class="mt-1.5">
           <ng-icon name="bootstrapGeoAltFill" class="text-primary text-2xl" />
@@ -175,7 +175,7 @@
 </div>
 <div
   *ngIf="showNotification"
-  class="fixed top-24 sm:top-20 left-1/2 transform -translate-x-1/2 bg-background-3 text-white px-4 py-3 border-l-4 rounded break-words popup min-w-80 max-w-80"
+  class="animate-fade-in fixed top-24 sm:top-20 left-1/2 transform -translate-x-1/2 bg-background-3 text-white px-4 py-3 border-l-4 rounded break-words popup min-w-80 max-w-80"
   [ngClass]="msgType ? 'border-green-500' : 'border-red-500'"
 >
   {{ message }}

@@ -122,3 +122,11 @@ body {
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75), 0 0 1rem rgba(0, 0, 0, 0.75);
   z-index: 999;
 }
+
+.black-gradient {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}

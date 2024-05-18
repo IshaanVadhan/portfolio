@@ -1,0 +1,72 @@
+[
+  { "id": 1, "name": "Java", "svgUrl": "../../assets/java.svg" },
+  { "id": 2, "name": "CPP", "svgUrl": "../../assets/cpp.svg" },
+  { "id": 3, "name": "Python", "svgUrl": "../../assets/python.svg" },
+  { "id": 4, "name": "HTML", "svgUrl": "../../assets/html.svg" },
+  { "id": 5, "name": "CSS", "svgUrl": "../../assets/css.svg" },
+  { "id": 6, "name": "Javascript", "svgUrl": "../../assets/js.svg" },
+  { "id": 7, "name": "PHP", "svgUrl": "../../assets/php.svg" },
+  { "id": 8, "name": "NodeJS", "svgUrl": "../../assets/node.svg" },
+  { "id": 9, "name": "GraphQL", "svgUrl": "../../assets/graphql.svg" },
+  { "id": 10, "name": "Bootstrap", "svgUrl": "../../assets/bootstrap.svg" },
+  { "id": 11, "name": "Tailwind", "svgUrl": "../../assets/tailwind.svg" },
+  { "id": 12, "name": "ReactJS", "svgUrl": "../../assets/react.svg" },
+  { "id": 13, "name": "AngularJS", "svgUrl": "../../assets/angular.svg" },
+  {
+    "id": 14,
+    "name": "ExpressJS",
+    "svgUrl": "../../assets/express.svg",
+    "whiteBg": true
+  },
+  { "id": 15, "name": "NestJS", "svgUrl": "../../assets/nest.svg" },
+  { "id": 16, "name": "Spring", "svgUrl": "../../assets/spring.svg" },
+  { "id": 17, "name": "Spring Boot", "svgUrl": "../../assets/springboot.svg" },
+  { "id": 18, "name": "FastAPI", "svgUrl": "../../assets/fastapi.svg" },
+  {
+    "id": 19,
+    "name": "MySQL",
+    "svgUrl": "../../assets/mysql.svg",
+    "whiteBg": true
+  },
+  { "id": 20, "name": "PostgreSQL", "svgUrl": "../../assets/postgresql.svg" },
+  {
+    "id": 21,
+    "name": "SQLite",
+    "svgUrl": "../../assets/sqlite.svg",
+    "whiteBg": true
+  },
+  { "id": 22, "name": "MongoDB", "svgUrl": "../../assets/mongodb.svg" },
+  { "id": 23, "name": "Firebase", "svgUrl": "../../assets/firebase.svg" },
+  {
+    "id": 24,
+    "name": "Digital Ocean",
+    "svgUrl": "../../assets/digitalocean.svg"
+  },
+  {
+    "id": 25,
+    "name": "AWS",
+    "svgUrl": "../../assets/aws.svg",
+    "whiteBg": true
+  },
+  { "id": 26, "name": "Windows", "svgUrl": "../../assets/windows.svg" },
+  { "id": 27, "name": "Linux", "svgUrl": "../../assets/linux.svg" },
+  {
+    "id": 28,
+    "name": "NextJS",
+    "svgUrl": "../../assets/nextjs.svg",
+    "whiteBg": true
+  },
+  {
+    "id": 29,
+    "name": "Flask",
+    "svgUrl": "../../assets/flask.svg",
+    "whiteBg": true
+  },
+  {
+    "id": 30,
+    "name": "Prisma",
+    "svgUrl": "../../assets/prisma.svg",
+    "whiteBg": true
+  },
+  { "id": 31, "name": "Socket.io", "svgUrl": "../../assets/socketio.svg" }
+]

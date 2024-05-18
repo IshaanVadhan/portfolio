@@ -15,53 +15,54 @@
         <h3 class="font-bold text-3xl lg:text-2xl text-text-2 font-raleway">
           Education
         </h3>
-        <div class="relative mt-6 ml-2 border-l border-text-3">
+        <div
+          class="relative ml-2 border-l border-text-3"
+          *ngFor="let education of educations; let first = first"
+          [ngClass]="first ? 'mt-6' : 'mt-8'"
+        >
           <div class="resume-item pb-2 pl-5">
             <h4 class="text-xl text-primary uppercase font-medium -mt-2">
-              Bachelor of Engineering (Computer)
+              {{ education?.degree }}
             </h4>
             <p class="my-1 italic text-text-2 text-base">
-              Progressive Education Society's Modern College of Engineering,
-              Pune, Maharashtra
+              {{ education?.org }}
             </p>
             <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
-              2021 - 2024
+              {{ education?.dates }}
             </div>
-            <ul class="list-disc ml-4 tracking-wide">
-              <li class="mt-2">8.94 CGPA</li>
+            <ul
+              class="list-disc ml-4 tracking-wide"
+              *ngFor="let point of education?.points"
+            >
+              <li class="mt-2">{{ point }}</li>
             </ul>
           </div>
         </div>
-        <div class="relative mt-8 ml-2 border-l border-text-3">
+
+        <h3
+          class="mt-9 font-bold text-3xl lg:text-2xl text-text-2 font-raleway"
+        >
+          Positions of Responsibility
+        </h3>
+        <div
+          class="relative ml-2 border-l border-text-3"
+          *ngFor="let position of positions; let first = first"
+          [ngClass]="first ? 'mt-6' : 'mt-8'"
+        >
           <div class="resume-item pb-2 pl-5">
             <h4 class="text-xl text-primary uppercase font-medium -mt-2">
-              12th grade (H. S. C.)
+              {{ position?.title }}
             </h4>
             <p class="my-1 italic text-text-2 text-base">
-              Mahaveer English Medium School and Junior College, Pune,
-              Maharashtra
+              {{ position?.org }}
             </p>
             <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
-              2018 - 2019
+              {{ position?.dates }}
             </div>
             <ul class="list-disc ml-4 tracking-wide">
-              <li class="mt-2">82.15 %</li>
-            </ul>
-          </div>
-        </div>
-        <div class="relative mt-8 ml-2 border-l border-text-3">
-          <div class="resume-item pb-2 pl-5">
-            <h4 class="text-xl text-primary uppercase font-medium -mt-2">
-              10th grade (S. S. C.)
-            </h4>
-            <p class="my-1 italic text-text-2 text-base">
-              Acharya Shri Vijay Vallabh School, Pune, Maharashtra
-            </p>
-            <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
-              2016 - 2017
-            </div>
-            <ul class="list-disc ml-4 tracking-wide">
-              <li class="mt-2">94.60 %</li>
+              <li class="mt-2" *ngFor="let point of position?.points">
+                {{ point }}
+              </li>
             </ul>
           </div>
         </div>
@@ -70,88 +71,24 @@
         <h3 class="font-bold text-3xl lg:text-2xl text-text-2 font-raleway">
           Experience
         </h3>
-        <div class="relative mt-6 ml-2 border-l border-text-3">
+        <div
+          class="relative ml-2 border-l border-text-3"
+          *ngFor="let experience of experiences; let first = first"
+          [ngClass]="first ? 'mt-6' : 'mt-8'"
+        >
           <div class="resume-item pb-2 pl-5">
             <h4 class="text-xl text-primary uppercase font-medium -mt-2">
-              Fullstack Developer Intern
+              {{ experience?.title }}
             </h4>
             <p class="my-1 italic text-text-2 text-base">
-              Woochat.io, Pune, Maharashtra
+              {{ experience?.org }}
             </p>
             <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
-              August 2023 - October 2023
+              {{ experience?.dates }}
             </div>
             <ul class="list-disc ml-4 tracking-wide">
-              <li class="mt-2">
-                Developed the WooChat product mobile application, creating a
-                parallel version of the web application for mobile users, using
-                React native (Expo)
-              </li>
-              <li class="mt-2">
-                Collaborated on the integration of GraphQL queries to enhance
-                data retrieval and interaction
-              </li>
-              <li class="mt-2">
-                Developed and optimized the backend employing technologies like
-                Nest.js and MongoDB
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="relative mt-6 ml-2 border-l border-text-3">
-          <div class="resume-item pb-2 pl-5">
-            <h4 class="text-xl text-primary uppercase font-medium -mt-2">
-              Fullstack Developer Intern
-            </h4>
-            <p class="my-1 italic text-text-2 text-base">
-              Acecom Solutions, Pune, Maharashtra
-            </p>
-            <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
-              October 2022 - April 2023
-            </div>
-            <ul class="list-disc ml-4 tracking-wide">
-              <li class="mt-2">
-                Worked on three projects from scratch, utilizing technologies
-                such as HTML, CSS, JavaScript, React.js, Python, FastAPI,
-                PostgreSQL, SQLite, DigitalOcean and Linux
-              </li>
-              <li class="mt-2">
-                Developed and successfully deployed a comprehensive job portal
-                web application
-              </li>
-              <li class="mt-2">
-                Designed and implemented a batch-wise manufacturing analysis
-                tool with features to analyze and optimize cost efficiency based
-                on reports generated on different levels
-              </li>
-              <li class="mt-2">
-                Implemented a procurement management tool integrated with
-                features such as vendor management and inventory tracking
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="relative mt-6 ml-2 border-l border-text-3">
-          <div class="resume-item pb-2 pl-5">
-            <h4 class="text-xl text-primary uppercase font-medium -mt-2">
-              Android Developer Intern
-            </h4>
-            <p class="my-1 italic text-text-2 text-base">
-              Deenanath Mangeshkar Hospital and Research Center, Pune,
-              Maharashtra
-            </p>
-            <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
-              January 2023 - April 2023
-            </div>
-            <ul class="list-disc ml-4 tracking-wide">
-              <li class="mt-2">
-                Designed and developed an efficient application that integrates
-                complex querying algorithms and data analytics to minimize
-                prescription errors in neonatal care
-              </li>
-              <li class="mt-2">
-                Implemented technologies like React Native, Firebase and Expo
-                for easier and efficient development
+              <li class="mt-2" *ngFor="let point of experience?.points">
+                {{ point }}
               </li>
             </ul>
           </div>
