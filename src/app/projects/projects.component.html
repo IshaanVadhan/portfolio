@@ -21,10 +21,11 @@
           <img
             class="w-full h-full object-cover"
             [src]="
-              project?.imgUrl ??
-              '../../assets/projecttemp' + project?.altImgId + '.png'
+              project?.imgUrls?.length > 0
+                ? project?.imgUrls[0]
+                : project?.altImgUrl
             "
-            alt="Profile"
+            [alt]="project?.name"
           />
           <div
             class="ease-500 absolute black-gradient z-2 top-0 w-full h-full flex flex-col justify-end p-5 hover:bg-[#000000aa] cursor-pointer"
@@ -72,8 +73,9 @@
       <img
         class="w-96 lg:w-full object-cover rounded-md"
         [src]="
-          selectedProject?.imgUrl ??
-          '../../assets/projecttemp' + selectedProject?.altImgId + '.png'
+          selectedProject?.imgUrls?.length > 0
+            ? selectedProject?.imgUrls[0]
+            : selectedProject?.altImgUrl
         "
         [alt]="selectedProject?.name"
       />
@@ -87,15 +89,10 @@
         <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
           {{ selectedProject?.dates }}
         </div>
-        <ul
-          class="list-disc ml-4 tracking-wide"
-          *ngFor="let point of selectedProject?.points"
-        >
-          <li class="mt-2">
+        <ul class="list-disc ml-4 tracking-wide">
+          <li class="mt-2" *ngFor="let point of selectedProject?.points">
             {{ point }}
           </li>
-        </ul>
-        <ul class="list-disc ml-4 tracking-wide">
           <li class="mt-2">
             Technologies used:
             <div

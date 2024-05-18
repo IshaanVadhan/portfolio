@@ -9,7 +9,8 @@
     ],
     "dates": "March 2024 - April 2024",
     "skills": [4, 5, 6, 10, 13, 1, 16, 17, 19, 26],
-    "altImgId": 1
+    "altImgUrl": "../../assets/projecttemp1.png",
+    "imgUrls": []
   },
   {
     "name": "Whatsapp Clone",
@@ -22,7 +23,8 @@
     ],
     "dates": "July 2023 - August 2023",
     "skills": [4, 5, 6, 11, 12, 8, 14, 20, 23, 26, 28, 30, 31],
-    "altImgId": 2
+    "altImgUrl": "../../assets/projecttemp2.png",
+    "imgUrls": []
   },
   {
     "name": "Netflix Clone",
@@ -35,7 +37,8 @@
     ],
     "dates": "July 2022 - August 2022",
     "skills": [4, 5, 6, 12, 23],
-    "altImgId": 3
+    "altImgUrl": "../../assets/projecttemp3.png",
+    "imgUrls": []
   },
   {
     "name": "Face Recognition Attendance System",
@@ -47,7 +50,8 @@
     ],
     "dates": "March 2022 - May 2022",
     "skills": [4, 5, 6, 3, 29],
-    "altImgId": 4
+    "altImgUrl": "../../assets/projecttemp4.png",
+    "imgUrls": []
   },
   {
     "name": "Daily Weather API - Web App",
@@ -59,6 +63,7 @@
     ],
     "dates": "May 2022 - June 2022",
     "skills": [4, 5, 6, 12],
-    "altImgId": 5
+    "altImgUrl": "../../assets/projecttemp5.png",
+    "imgUrls": []
   }
 ]
