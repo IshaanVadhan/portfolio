@@ -15,7 +15,7 @@
         class="grid grid-cols-4 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-1 gap-6 font-poppins"
       >
         <div
-          class="relative rounded-md overflow-hidden h-80"
+          class="relative rounded-md overflow-hidden h-80 border border-background-4"
           *ngFor="let project of projects"
         >
           <img
@@ -74,27 +74,50 @@
     <div class="flex lg:flex-col overflow-y-auto gap-6 p-2 items-start">
       <img
         *ngIf="selectedProject?.imgUrls?.length <= 0"
-        class="w-1/2 lg:w-full object-contain rounded-md px-0.5"
+        class="w-1/2 lg:w-full object-contain rounded-md border-2 border-background-4"
         [src]="selectedProject?.altImgUrl"
         [alt]="selectedProject?.name"
       />
-      <swiper-container
+      <div
+        class="relative w-1/2 lg:w-full h-full"
         *ngIf="selectedProject?.imgUrls?.length > 0"
-        class="w-1/2 lg:w-full h-full"
-        pagination="true"
       >
-        <swiper-slide
-          class="px-0.5"
-          *ngFor="let imgUrl of selectedProject?.imgUrls"
-        >
-          <img
-            class="object-cover rounded-md cursor-pointer"
-            [src]="imgUrl"
-            [alt]="selectedProject?.name"
-            (click)="setSelectedImage(imgUrl)"
+        <div class="swiper-button-prev absolute z-[999] top-[45%] left-2">
+          <ng-icon
+            name="bootstrapCaretLeftFill"
+            class="text-primary text-3xl sm:text-2xl"
           />
-        </swiper-slide>
-      </swiper-container>
+        </div>
+        <div class="swiper-button-next absolute z-[999] top-[45%] right-2">
+          <ng-icon
+            name="bootstrapCaretRightFill"
+            class="text-primary text-3xl sm:text-2xl"
+          />
+        </div>
+        <swiper-container
+          *ngIf="selectedProject?.imgUrls?.length > 0"
+          pagination="true"
+          pagination-clickable="true"
+          rewind="true"
+          navigation="true"
+          navigation-next-el=".swiper-button-next"
+          navigation-prev-el=".swiper-button-prev"
+          autoplay="true"
+          auto-height="true"
+        >
+          <swiper-slide
+            class="px-0.5"
+            *ngFor="let imgUrl of selectedProject?.imgUrls"
+          >
+            <img
+              class="object-cover rounded-md cursor-pointer border-2 border-background-4"
+              [src]="imgUrl"
+              [alt]="selectedProject?.name"
+              (click)="setSelectedImage(imgUrl)"
+            />
+          </swiper-slide>
+        </swiper-container>
+      </div>
       <div class="relative font-poppins">
         <h4 class="text-xl text-primary uppercase font-medium">
           {{ selectedProject?.name }}

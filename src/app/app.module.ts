@@ -19,6 +19,7 @@ import {
   bootstrapTelephoneOutboundFill,
   bootstrapX,
   bootstrapInfoCircleFill,
+  bootstrapCaretLeftFill,
 } from '@ng-icons/bootstrap-icons';
 import { AboutComponent } from './about/about.component';
 import { EmptyComponent } from './empty/empty.component';
@@ -48,6 +49,7 @@ import { ReactiveFormsModule } from '@angular/forms';
       bootstrapList,
       bootstrapX,
       bootstrapCaretRightFill,
+      bootstrapCaretLeftFill,
       bootstrapGeoAltFill,
       bootstrapShareFill,
       bootstrapEnvelopeAtFill,

@@ -1,0 +1,5 @@
+:host {
+  --swiper-pagination-color: #50cf7f;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  --swiper-pagination-bullet-inactive-opacity: 0.66;
+}
