@@ -8,7 +8,7 @@ module.exports = {
       lg: { max: "992px" },
       md: { max: "768px" },
       sm: { max: "576px" },
-      xs: { min: "576px" },
+      xs: { max: "400px" },
     },
     extend: {
       keyframes: {

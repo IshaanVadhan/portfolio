@@ -52,7 +52,7 @@
   *ngIf="selectedProject?.name"
 >
   <div
-    class="animate-fade-in max-w-6xl max-h-[75%] xl:max-w-4xl lg:max-w-xl lg:max-h-[85%] md:max-w-lg sm:max-w-[90%] bg-background-2 rounded-md flex flex-col p-5"
+    class="animate-fade-in max-w-6xl max-h-[75%] xl:max-w-4xl lg:max-w-xl lg:max-h-[85%] md:max-w-lg sm:max-w-full sm:max-h-full sm:rounded-none bg-background-2 rounded-md flex flex-col p-5"
   >
     <div class="flex justify-between items-center">
       <h1 class="font-medium text-2xl break-words md:text-xl">
@@ -86,9 +86,10 @@
           *ngFor="let imgUrl of selectedProject?.imgUrls"
         >
           <img
-            class="object-cover rounded-md"
+            class="object-cover rounded-md cursor-pointer"
             [src]="imgUrl"
             [alt]="selectedProject?.name"
+            (click)="setSelectedImage(imgUrl)"
           />
         </swiper-slide>
       </swiper-container>
@@ -132,4 +133,15 @@
       </div>
     </div>
   </div>
+</div>
+<div
+  class="bg-[#000000d5] z-[999] fixed top-0 right-0 bottom-0 left-0 overflow-hidden animate-fade-in px-6 py-6 flex justify-center items-center"
+  *ngIf="selectedImage"
+  (click)="setSelectedImage(null)"
+>
+  <img
+    class="h-full w-full object-contain md:rotate-90 sm:scale-[1.35] xs:scale-[1.85]"
+    [src]="selectedImage"
+    [alt]="selectedProject?.name"
+  />
 </div>

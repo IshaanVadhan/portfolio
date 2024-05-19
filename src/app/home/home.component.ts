@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 
@@ -11,7 +11,11 @@ export class HomeComponent {
   activeTab?: String;
   mobileToggle: Boolean = false;
 
-  constructor(private router: Router, private elementRef: ElementRef) {}
+  constructor(
+    private router: Router,
+    private elementRef: ElementRef,
+    private renderer: Renderer2
+  ) {}
 
   ngOnInit() {
     this.router.events
@@ -39,5 +43,10 @@ export class HomeComponent {
 
   setMobileToggle(state: Boolean) {
     this.mobileToggle = state;
+    if (this.mobileToggle) {
+      this.renderer.setStyle(document.body, 'overflow', 'hidden');
+    } else {
+      this.renderer.removeStyle(document.body, 'overflow');
+    }
   }
 }
