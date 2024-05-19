@@ -50,9 +50,11 @@
 <div
   class="bg-[#000000d5] z-[999] fixed top-0 right-0 bottom-0 left-0 overflow-hidden animate-fade-in flex justify-center items-center"
   *ngIf="selectedProject?.name"
+  (click)="setSelectedProject(null)"
 >
   <div
     class="animate-fade-in max-w-6xl max-h-[75%] xl:max-w-4xl lg:max-w-xl lg:max-h-[85%] md:max-w-lg sm:max-w-full sm:max-h-full sm:rounded-none bg-background-2 rounded-md flex flex-col p-5"
+    (click)="$event.stopPropagation()"
   >
     <div class="flex justify-between items-center">
       <h1 class="font-medium text-2xl break-words md:text-xl">
