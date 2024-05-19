@@ -10,7 +10,18 @@
     "dates": "March 2024 - April 2024",
     "skills": [4, 5, 6, 10, 13, 1, 16, 17, 19, 26],
     "altImgUrl": "../../assets/projecttemp1.png",
-    "imgUrls": []
+    "imgUrls": [
+      "../../assets/project1/1.png",
+      "../../assets/project1/2.png",
+      "../../assets/project1/3.png",
+      "../../assets/project1/4.png",
+      "../../assets/project1/5.png",
+      "../../assets/project1/6.png",
+      "../../assets/project1/7.png",
+      "../../assets/project1/8.png",
+      "../../assets/project1/9.png",
+      "../../assets/project1/10.png"
+    ]
   },
   {
     "name": "Whatsapp Clone",
@@ -24,7 +35,14 @@
     "dates": "July 2023 - August 2023",
     "skills": [4, 5, 6, 11, 12, 8, 14, 20, 23, 26, 28, 30, 31],
     "altImgUrl": "../../assets/projecttemp2.png",
-    "imgUrls": []
+    "imgUrls": [
+      "../../assets/project2/1.png",
+      "../../assets/project2/2.png",
+      "../../assets/project2/3.png",
+      "../../assets/project2/4.png",
+      "../../assets/project2/5.png",
+      "../../assets/project2/6.png"
+    ]
   },
   {
     "name": "Netflix Clone",
@@ -38,7 +56,15 @@
     "dates": "July 2022 - August 2022",
     "skills": [4, 5, 6, 12, 23],
     "altImgUrl": "../../assets/projecttemp3.png",
-    "imgUrls": []
+    "imgUrls": [
+      "../../assets/project3/1.png",
+      "../../assets/project3/2.png",
+      "../../assets/project3/3.png",
+      "../../assets/project3/4.png",
+      "../../assets/project3/5.png",
+      "../../assets/project3/6.png",
+      "../../assets/project3/7.png"
+    ]
   },
   {
     "name": "Face Recognition Attendance System",
@@ -51,7 +77,7 @@
     "dates": "March 2022 - May 2022",
     "skills": [4, 5, 6, 3, 29],
     "altImgUrl": "../../assets/projecttemp4.png",
-    "imgUrls": []
+    "imgUrls": ["../../assets/project4/1.png", "../../assets/project4/2.png"]
   },
   {
     "name": "Daily Weather API - Web App",
@@ -64,6 +90,6 @@
     "dates": "May 2022 - June 2022",
     "skills": [4, 5, 6, 12],
     "altImgUrl": "../../assets/projecttemp5.png",
-    "imgUrls": []
+    "imgUrls": ["../../assets/project5/1.png", "../../assets/project5/2.png"]
   }
 ]

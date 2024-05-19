@@ -69,16 +69,29 @@
       </button>
     </div>
     <hr class="border-background-4 mt-3 mb-5" />
-    <div class="flex lg:flex-col overflow-y-auto gap-6 p-2">
+    <div class="flex lg:flex-col overflow-y-auto gap-6 p-2 items-start">
       <img
-        class="w-96 lg:w-full object-cover rounded-md"
-        [src]="
-          selectedProject?.imgUrls?.length > 0
-            ? selectedProject?.imgUrls[0]
-            : selectedProject?.altImgUrl
-        "
+        *ngIf="selectedProject?.imgUrls?.length <= 0"
+        class="w-1/2 lg:w-full object-contain rounded-md px-0.5"
+        [src]="selectedProject?.altImgUrl"
         [alt]="selectedProject?.name"
       />
+      <swiper-container
+        *ngIf="selectedProject?.imgUrls?.length > 0"
+        class="w-1/2 lg:w-full h-full"
+        pagination="true"
+      >
+        <swiper-slide
+          class="px-0.5"
+          *ngFor="let imgUrl of selectedProject?.imgUrls"
+        >
+          <img
+            class="object-cover rounded-md"
+            [src]="imgUrl"
+            [alt]="selectedProject?.name"
+          />
+        </swiper-slide>
+      </swiper-container>
       <div class="relative font-poppins">
         <h4 class="text-xl text-primary uppercase font-medium">
           {{ selectedProject?.name }}
