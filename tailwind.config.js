@@ -42,6 +42,14 @@ module.exports = {
           "66%": { opacity: 0.5 },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
+        orbit: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+        "reverse-orbit": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(-360deg)" },
+        },
       },
       animation: {
         "fade-in": "fadeIn 0.4s ease-in",
@@ -54,6 +62,8 @@ module.exports = {
         "enter-bottom-fast": "enterFromBottom 0.4s ease-in",
         "enter-right-fast": "enterFromRight 0.4s ease-in",
         "enter-left-fast": "enterFromLeft 0.4s ease-in",
+        orbit: "orbit 30s linear infinite",
+        "reverse-orbit": "reverse-orbit 30s linear infinite",
       },
       fontFamily: {
         raleway: ["Raleway", "sans-serif"],

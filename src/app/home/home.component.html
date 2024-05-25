@@ -19,7 +19,7 @@
       "
     >
       <h1
-        class="ease-300 my-[0.66rem] lg:my-0 font-bold font-poppins text-center cursor-pointer"
+        class="ease-300 my-[0.66rem] lg:mb-0 lg:mt-2 font-bold font-poppins text-center cursor-pointer"
         [ngClass]="
           activeTab !== 'home'
             ? 'text-4xl sm:text-2xl'
@@ -46,7 +46,7 @@
         [class.mt-6]="activeTab === 'home'"
         [ngClass]="
           mobileToggle
-            ? 'lg:block lg:animate-fade-in bg-[#000000e6] z-99 mt-0'
+            ? 'lg:block lg:animate-fade-in bg-[#000000e6] z-50 mt-0'
             : 'lg:hidden'
         "
       >
@@ -55,7 +55,7 @@
           [class.animate-enter-bottom]="activeTab === 'home'"
           [ngClass]="
             mobileToggle
-              ? 'flex-col z-99 lg:absolute lg:flex lg:flex-col lg:animate-fade-in'
+              ? 'flex-col z-50 lg:absolute lg:flex lg:flex-col lg:animate-fade-in'
               : 'lg:hidden lg:animate-fade-out'
           "
         >
@@ -116,7 +116,7 @@
           </li>
         </ul>
       </nav>
-      <div class="hidden lg:block">
+      <div class="hidden lg:block z-50">
         <ng-icon
           *ngIf="!mobileToggle"
           name="bootstrapList"
@@ -172,7 +172,7 @@
       </div>
     </div>
     <div
-      class="ease-300 flex flex-col ml-12 lg:ml-0 animate-enter-right lg:animate-enter-top"
+      class="ease-300 flex flex-col ml-12 lg:ml-0 animate-enter-right lg:animate-enter-top relative"
       [class.hidden]="activeTab !== 'home'"
     >
       <img
@@ -180,6 +180,79 @@
         src="../../assets/profile.jpeg"
         alt="Profile"
       />
+      <div
+        class="absolute w-full h-full rounded-full animate-orbit -top-[7.5%] -left-[7.5%]"
+      >
+        <div
+          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
+        >
+          <img
+            src="../../assets/graphql.svg"
+            class="w-full h-full"
+            alt="GraphQL"
+          />
+        </div>
+        <div
+          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
+        >
+          <img src="../../assets/java.svg" class="w-full h-full" alt="Java" />
+        </div>
+        <div
+          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
+        >
+          <img
+            src="../../assets/spring.svg"
+            class="w-full h-full"
+            alt="Spring"
+          />
+        </div>
+        <div
+          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
+        >
+          <img
+            src="../../assets/react.svg"
+            class="w-full h-full"
+            alt="ReactJS"
+          />
+        </div>
+        <div
+          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
+        >
+          <img
+            src="../../assets/angular.svg"
+            class="w-full h-full"
+            alt="AngularJS"
+          />
+        </div>
+        <div
+          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
+        >
+          <img
+            src="../../assets/js.svg"
+            class="w-full h-full"
+            alt="Javascript"
+          />
+        </div>
+        <div
+          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
+        >
+          <img
+            src="../../assets/tailwind.svg"
+            class="w-full h-full"
+            alt="Tailwind"
+          />
+        </div>
+
+        <div
+          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
+        >
+          <img
+            src="../../assets/postgresql.svg"
+            class="w-full h-full"
+            alt="PostgreSQL"
+          />
+        </div>
+      </div>
     </div>
   </div>
 </header>
