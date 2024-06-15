@@ -4,7 +4,13 @@
       "degree": "Bachelor of Engineering (Computer)",
       "org": "Progressive Education Society's Modern College of Engineering, Pune, Maharashtra",
       "dates": "2021 - 2024",
-      "points": ["8.94 CGPA"]
+      "points": [
+        "Overall: 8.86 CGPA",
+        "F.E. 2021 | 9.84 SGPA",
+        "S.E. 2022 | 8.77 SGPA",
+        "T.E. 2023 | 8.21 SGPA",
+        "B.E. 2024 | 8.57 SGPA"
+      ]
     },
     {
       "degree": "12th grade (H. S. C.)",
@@ -59,6 +65,15 @@
       "points": [
         "Designed and developed an efficient application that integrates complex querying algorithms and data analytics to minimize prescription errors in neonatal care",
         "Implemented technologies like React Native, Firebase and Expo for easier and efficient development"
+      ]
+    },
+    {
+      "title": "AWS Cloud Virtual Intern",
+      "org": "EduSkills Foundation",
+      "dates": "October 2021 - December 2021",
+      "points": [
+        "Implemented AWS services like EC2, EBS, S3, and IAM for user and group management with specific policies",
+        "Configured EBS volumes, managed security groups, and contributed to designing Amazon ELB, RDS, and other AWS infrastructure services"
       ]
     }
   ]
