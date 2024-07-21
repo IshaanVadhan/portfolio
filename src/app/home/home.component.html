@@ -1,10 +1,10 @@
 <header
   id="header"
-  class="ease-300 w-full z-[999]"
+  class="ease-300 w-[100dvw] z-[999]"
   [ngClass]="
     activeTab !== 'home'
       ? 'sticky h-20 top-0 left-0 right-0 bg-background-2 sm:h-16'
-      : 'h-screen'
+      : 'h-[100dvh]'
   "
 >
   <div
@@ -42,7 +42,7 @@
 
       <nav
         id="navbar"
-        class="ease-300 relative lg:fixed lg:top-0 lg:right-0 lg:bottom-0 lg:left-0 lg:overflow-hidden lg:mt-0"
+        class="ease-300 relative lg:fixed lg:top-0 lg:left-0 lg:w-full lg:h-full lg:overflow-hidden lg:mt-0"
         [class.mt-6]="activeTab === 'home'"
         [ngClass]="
           mobileToggle
@@ -180,79 +180,6 @@
         src="../../assets/profile.jpeg"
         alt="Profile"
       />
-      <div
-        class="absolute w-full h-full rounded-full animate-orbit -top-[7.5%] -left-[7.5%]"
-      >
-        <div
-          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
-        >
-          <img
-            src="../../assets/graphql.svg"
-            class="w-full h-full"
-            alt="GraphQL"
-          />
-        </div>
-        <div
-          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
-        >
-          <img src="../../assets/java.svg" class="w-full h-full" alt="Java" />
-        </div>
-        <div
-          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
-        >
-          <img
-            src="../../assets/spring.svg"
-            class="w-full h-full"
-            alt="Spring"
-          />
-        </div>
-        <div
-          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
-        >
-          <img
-            src="../../assets/react.svg"
-            class="w-full h-full"
-            alt="ReactJS"
-          />
-        </div>
-        <div
-          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
-        >
-          <img
-            src="../../assets/angular.svg"
-            class="w-full h-full"
-            alt="AngularJS"
-          />
-        </div>
-        <div
-          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
-        >
-          <img
-            src="../../assets/js.svg"
-            class="w-full h-full"
-            alt="Javascript"
-          />
-        </div>
-        <div
-          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
-        >
-          <img
-            src="../../assets/tailwind.svg"
-            class="w-full h-full"
-            alt="Tailwind"
-          />
-        </div>
-
-        <div
-          class="bg-background-4 p-2 rounded-full orbit-icon w-10 h-10 flex justify-center items-center border-2 border-primary animate-reverse-orbit origin-top-left"
-        >
-          <img
-            src="../../assets/postgresql.svg"
-            class="w-full h-full"
-            alt="PostgreSQL"
-          />
-        </div>
-      </div>
     </div>
   </div>
 </header>

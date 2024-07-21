@@ -1,18 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
-  /* .select2-dropdown {
-    @apply rounded-b-lg shadow-md;
-  }
-  .select2-search {
-    @apply border border-gray-300 rounded;
-  }
-  .select2-results__group {
-    @apply text-lg font-bold text-gray-900;
-  } */
   .nav-tab::before {
     content: "";
     position: absolute;
@@ -83,87 +73,51 @@
     background: #50cf7f;
     border: 0.15rem solid #50cf7f;
   }
-}
 
-html,
-body {
-  background: #0a0e0f !important;
-  color: #eee;
-  position: relative;
-  background: transparent;
-  font-family: "Raleway", sans-serif;
-  width: 100%;
-  min-height: 100vh;
-}
+  html,
+  body {
+    background: #0a0e0f !important;
+    color: #eee;
+    position: relative;
+    background: transparent;
+    font-family: "Raleway", sans-serif;
+    width: 100dvw;
+    min-height: 100dvh;
+  }
 
-::-webkit-scrollbar {
-  width: 0.25rem;
-}
+  ::-webkit-scrollbar {
+    width: 0.25rem;
+    height: 0.25rem;
+  }
 
-::-webkit-scrollbar-thumb {
-  background-color: #2a3234;
-  border-radius: 0.5rem;
-}
+  ::-webkit-scrollbar-thumb {
+    background-color: #2a3234;
+    border-radius: 0.5rem;
+  }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: #50cf7fdd;
-  cursor: pointer;
-}
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #50cf7fdd;
+    cursor: pointer;
+  }
 
-::-webkit-scrollbar-track {
-  background: #0a0e0f;
-}
+  ::-webkit-scrollbar-track {
+    background: #0a0e0f;
+  }
 
-::-webkit-scrollbar-thumb:active {
-  background-color: #50cf7fbb;
-}
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #50cf7fbb;
+  }
 
-.popup {
-  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75), 0 0 1rem rgba(0, 0, 0, 0.75);
-  z-index: 999;
-}
+  .popup {
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.75), 0 0 1rem rgba(0, 0, 0, 0.75);
+    z-index: 999;
+  }
 
-.black-gradient {
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 100%
-  );
-}
-
-.orbit-icon {
-  position: absolute;
-}
-
-.orbit-icon:nth-child(1) {
-  top: 0;
-  left: 50%;
-}
-.orbit-icon:nth-child(2) {
-  top: 50%;
-  left: 100%;
-}
-.orbit-icon:nth-child(3) {
-  top: 100%;
-  left: 50%;
-}
-.orbit-icon:nth-child(4) {
-  top: 50%;
-  left: 0;
-}
-.orbit-icon:nth-child(5) {
-  top: 15%;
-  left: 85%;
-}
-.orbit-icon:nth-child(6) {
-  top: 85%;
-  left: 85%;
-}
-.orbit-icon:nth-child(7) {
-  top: 85%;
-  left: 15%;
-}
-.orbit-icon:nth-child(8) {
-  top: 15%;
-  left: 15%;
+  .black-gradient {
+    background: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
 }
