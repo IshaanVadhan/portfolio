@@ -69,5 +69,11 @@
     "whiteBg": true
   },
   { "id": 31, "name": "Windows", "svgUrl": "../../assets/windows.svg" },
-  { "id": 32, "name": "Linux", "svgUrl": "../../assets/linux.svg" }
+  { "id": 32, "name": "Linux", "svgUrl": "../../assets/linux.svg" },
+  {
+    "id": 33,
+    "name": "Vercel",
+    "svgUrl": "../../assets/vercel.svg",
+    "whiteBg": true
+  }
 ]

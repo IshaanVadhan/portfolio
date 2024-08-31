@@ -1,7 +1,7 @@
 [
   {
-    "name": "Mobile Prepaid Recharge System",
-    "summary": "A fullstack web application built using Spring Boot and Angular",
+    "name": "MobiCom",
+    "summary": "A mobile prepaid recharge application built using Spring Boot and Angular",
     "points": [
       "Facilitated users to browse and purchase plans with dummy payment methods, while offering statistics on their current plan and past recharges via dashboard interfaces",
       "Implemented authentication, mail service and scheduler tasks for seamless user experience and reliability",
@@ -67,8 +67,8 @@
     ]
   },
   {
-    "name": "Face Recognition Attendance System",
-    "summary": "Attendance system using Python with its framework and libraries",
+    "name": "FaceRecog",
+    "summary": "A face recognition based attendance system using Python with its framework and libraries",
     "points": [
       "Developed a python application using the open source face recognition library",
       "Integrated it to a web application using the Flask framework",
@@ -81,7 +81,7 @@
   },
   {
     "name": "Daily Weather API - Web App",
-    "summary": "Application based on OpenWeatherMap API",
+    "summary": "A weather forecast application based on OpenWeatherMap API built using React.js",
     "points": [
       "Implemented a UI to fetch current weather data using the React.js framework",
       "Employment of storage formats like JSON and XML for data retrieved using search queries",
@@ -91,5 +91,65 @@
     "skills": [4, 5, 6, 13, 31],
     "altImgUrl": "../../assets/projecttemp5.png",
     "imgUrls": ["../../assets/project5/1.png", "../../assets/project5/2.png"]
+  },
+  {
+    "name": "TaskNest",
+    "summary": "A task management application built using Next.js, Express.js, and MongoDB",
+    "points": [
+      "Implemented CRUD operations for tasks, allowing users to add, update, delete, and mark tasks as completed while ensuring they are unique to users",
+      "Integrated JWT-based user authentication for secure access and user management",
+      "Deployed the fullstack application on Vercel for seamless access and scalability"
+    ],
+    "dates": "August 2024 - September 2024",
+    "skills": [4, 5, 6, 9, 12, 13, 15, 17, 26, 31, 33],
+    "altImgUrl": "../../assets/projecttemp6.png",
+    "imgUrls": [
+      "../../assets/project6/1.png",
+      "../../assets/project6/2.png",
+      "../../assets/project6/3.png",
+      "../../assets/project6/4.png"
+    ]
+  },
+  {
+    "name": "ThoughtLane",
+    "summary": "A blogging platform built using Next.js, Express.js and MongoDB",
+    "points": [
+      "Implemented features for posting, updating, and deleting blogs",
+      "Added functionality to comment on and like posts, enhancing user interaction",
+      "Provided the ability to view posts from different users, fostering a community experience",
+      "Integrated JWT-based user authentication for secure access and user management",
+      "Deployed the fullstack application on Vercel for reliable hosting and performance"
+    ],
+    "dates": "August 2024 - September 2024",
+    "skills": [4, 5, 6, 9, 12, 13, 15, 17, 26, 31, 33],
+    "altImgUrl": "../../assets/projecttemp7.png",
+    "imgUrls": [
+      "../../assets/project7/1.png",
+      "../../assets/project7/2.png",
+      "../../assets/project7/3.png",
+      "../../assets/project7/4.png",
+      "../../assets/project7/5.png",
+      "../../assets/project7/6.png",
+      "../../assets/project7/7.png",
+      "../../assets/project7/8.png"
+    ]
+  },
+  {
+    "name": "SkyCast",
+    "summary": "A weather forecast application based on Zomato's WeatherUnion API built using Next.js",
+    "points": [
+      "Developed a UI for daily weather lookups, fetching details such as temperature, humidity, wind speed, and rain accumulation",
+      "Leveraged the Free Weather API provided by Zomato, called WeatherUnion, to retrieve weather information for localities in various Indian cities",
+      "Ensured a responsive and user-friendly interface for seamless weather updates",
+      "Deployed the web-app on Vercel for optimal performance and easy accessibility"
+    ],
+    "dates": "August 2024 - September 2024",
+    "skills": [4, 5, 6, 7, 12, 13, 17, 31, 33],
+    "altImgUrl": "../../assets/projecttemp8.png",
+    "imgUrls": [
+      "../../assets/project8/1.png",
+      "../../assets/project8/2.png",
+      "../../assets/project8/3.png"
+    ]
   }
 ]
