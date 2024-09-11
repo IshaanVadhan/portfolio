@@ -1,6 +1,6 @@
 [
   {
-    "name": "MobiCom",
+    "name": "MobiComm",
     "summary": "A mobile prepaid recharge application built using Spring Boot and Angular",
     "points": [
       "Facilitated users to browse and purchase plans with dummy payment methods, while offering statistics on their current plan and past recharges via dashboard interfaces",
