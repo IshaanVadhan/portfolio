@@ -1,3 +1,12 @@
+<div
+  [ngClass]="
+    activeTab !== 'home'
+      ? 'hidden'
+      : 'w-[100dvw] h-[100dvh] absolute overflow-hidden animate-fade-in'
+  "
+>
+  <canvas id="particleCanvas"></canvas>
+</div>
 <header
   id="header"
   class="ease-300 w-[100dvw] z-[999]"
