@@ -28,7 +28,7 @@
       "
     >
       <h1
-        class="ease-300 my-[0.66rem] lg:mb-0 lg:mt-2 font-bold font-poppins text-center cursor-pointer"
+        class="ease-300 my-[0.66rem] lg:mb-0 lg:mt-2 font-bold font-poppins text-center cursor-pointer z-10"
         [ngClass]="
           activeTab !== 'home'
             ? 'text-4xl sm:text-2xl'
@@ -38,7 +38,7 @@
         <a (click)="setActiveTab('home')" routerLink="/">Ishaan Vadhan</a>
       </h1>
       <h2
-        class="ease-300 text-text-2 text-2xl lg:text-xl lg:text-center my-2 font-bold animate-enter-top lg:animate-enter-bottom lg:leading-9 md:max-w-60"
+        class="ease-300 text-text-2 text-2xl lg:text-xl lg:text-center my-2 font-bold animate-enter-top lg:animate-enter-bottom lg:leading-9 md:max-w-60 z-10"
         [class.hidden]="activeTab !== 'home'"
       >
         I'm a passionate
@@ -151,7 +151,7 @@
       </div>
 
       <div
-        class="ease-300 mt-8 flex lg:mt-6 animate-enter-bottom"
+        class="ease-300 mt-8 flex lg:mt-6 animate-enter-bottom z-10"
         [class.hidden]="activeTab !== 'home'"
       >
         <a

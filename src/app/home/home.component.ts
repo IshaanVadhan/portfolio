@@ -112,8 +112,8 @@ export class HomeComponent {
 
   createParticle() {
     return {
-      x: Math.random() * this.canvas.width,
-      y: Math.random() * this.canvas.height,
+      x: Math.random() * this.canvas?.width,
+      y: Math.random() * this.canvas?.height,
       size: Math.random() * 2 + 1,
       speedX: (Math.random() - 0.5) * 0.5,
       speedY: (Math.random() - 0.5) * 0.5,
@@ -122,7 +122,7 @@ export class HomeComponent {
   }
 
   animateParticles() {
-    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+    this.ctx.clearRect(0, 0, this.canvas?.width, this.canvas?.height);
     for (let i = 0; i < this.particlesArray.length; i++) {
       const particle = this.particlesArray[i];
       this.updateParticle(particle);
