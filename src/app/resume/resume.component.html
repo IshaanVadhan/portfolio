@@ -21,12 +21,20 @@
           [ngClass]="first ? 'mt-6' : 'mt-8'"
         >
           <div class="resume-item pb-2 pl-5">
-            <h4 class="text-xl text-primary uppercase font-medium -mt-2">
-              {{ education?.degree }}
-            </h4>
-            <p class="my-1 italic text-text-2 text-base">
-              {{ education?.org }}
-            </p>
+            <div class="flex w-full">
+              <div class="flex-1 -mt-2 pr-8">
+                <h4 class="text-xl text-primary uppercase font-medium">
+                  {{ education?.degree }}
+                </h4>
+                <p class="mt-1 italic text-text-2 text-base">
+                  {{ education?.org }}
+                </p>
+              </div>
+              <img
+                [src]="education?.imgUrl"
+                class="w-14 h-14 border-2 border-background-4 rounded"
+              />
+            </div>
             <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
               {{ education?.dates }}
             </div>
@@ -50,12 +58,20 @@
           [ngClass]="first ? 'mt-6' : 'mt-8'"
         >
           <div class="resume-item pb-2 pl-5">
-            <h4 class="text-xl text-primary uppercase font-medium -mt-2">
-              {{ position?.title }}
-            </h4>
-            <p class="my-1 italic text-text-2 text-base">
-              {{ position?.org }}
-            </p>
+            <div class="flex w-full">
+              <div class="flex-1 -mt-2 pr-8">
+                <h4 class="text-xl text-primary uppercase font-medium">
+                  {{ position?.title }}
+                </h4>
+                <p class="mt-1 italic text-text-2 text-base">
+                  {{ position?.org }}
+                </p>
+              </div>
+              <img
+                [src]="position?.imgUrl"
+                class="w-14 h-14 border-2 border-background-4 rounded"
+              />
+            </div>
             <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
               {{ position?.dates }}
             </div>
@@ -77,12 +93,20 @@
           [ngClass]="first ? 'mt-6' : 'mt-8'"
         >
           <div class="resume-item pb-2 pl-5">
-            <h4 class="text-xl text-primary uppercase font-medium -mt-2">
-              {{ experience?.title }}
-            </h4>
-            <p class="my-1 italic text-text-2 text-base">
-              {{ experience?.org }}
-            </p>
+            <div class="flex w-full">
+              <div class="flex-1 -mt-2 pr-8">
+                <h4 class="text-xl text-primary uppercase font-medium">
+                  {{ experience?.title }}
+                </h4>
+                <p class="mt-1 italic text-text-2 text-base">
+                  {{ experience?.org }}
+                </p>
+              </div>
+              <img
+                [src]="experience?.imgUrl"
+                class="w-14 h-14 border-2 border-background-4 rounded"
+              />
+            </div>
             <div class="bg-background-3 px-3 py-1 my-2 rounded w-fit text-sm">
               {{ experience?.dates }}
             </div>

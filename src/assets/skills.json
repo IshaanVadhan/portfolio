@@ -12,7 +12,7 @@
   { "id": 11, "name": "Bootstrap", "svgUrl": "../../assets/bootstrap.svg" },
   { "id": 12, "name": "Tailwind", "svgUrl": "../../assets/tailwind.svg" },
   { "id": 13, "name": "ReactJS", "svgUrl": "../../assets/react.svg" },
-  { "id": 14, "name": "AngularJS", "svgUrl": "../../assets/angular.svg" },
+  { "id": 14, "name": "Angular", "svgUrl": "../../assets/angular.svg" },
   {
     "id": 15,
     "name": "ExpressJS",
